@@ -2,8 +2,14 @@
   text-align: center;
 }
 
-.App-logo {
+.App img.working{
   animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App img.not-working {
+  animation: App-logo-spun infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
 }
@@ -30,4 +36,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes App-logo-spun {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.App button.working {
+  width: 200px;
+}
+.App button.not-working {
+  width: 200px;
 }
